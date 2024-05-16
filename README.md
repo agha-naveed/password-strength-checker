@@ -23,7 +23,7 @@ This web app requires no installation. Simply access it through a web browser wi
 
 If you wish to contribute to the development of this web app, follow these steps:
 
-1. Clone the repository from GitHub: [repository_link].
+1. Clone the repository from GitHub.
 2. Navigate to the project directory.
 3. Open the project in your preferred code editor.
 4. Make your desired changes or improvements.
