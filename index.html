@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="main-body">
+        <div class="container">
+            <div class="form">
+                <div class="input-section">
+                    <div class="email-div">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Email ID"/>
+                    </div>
+                    <div class="password-div">
+                        <span class="d-flex">
+                            <i class="fa-solid fa-lock"></i>
+                            <span class="show-hide-icon d-flex">
+                                <input type="password" placeholder="Password" id="password-field" />
+                                <i class="fa-solid fa-eye-slash"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </span>
+                        </span>
+                        <div id="strength">Password is <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="remember-section">
+                    <span>
+                        <label for="r-me">
+                            <input type="checkbox" id="r-me"/>
+                            Remember me
+                        </label>
+                    </span>
+                    <a href="#"><em>Forgot Password?</em></a>
+                </div>
+                <button id="login-btn">Login</button>
+            </div>
+            <div class="conditions">
+                <p>Password:</p>
+                <ul>
+                    <li id="password-length">
+                        <span class="tick-logo">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </span>
+                        Length should be greater than 6.</li>
+                    <li id="check-uppercase">
+                        <span class="tick-logo">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </span>
+                            Should contain an Uppercase letter.</li>
+                         
+                    <li id="check-symbol">
+                        <span class="tick-logo">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </span>
+                        Should contain a Symbol.</li>
+                    <li id="check-number">
+                        <span class="tick-logo">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </span>
+                        Should contain a Number.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
