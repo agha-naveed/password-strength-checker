@@ -90,11 +90,13 @@ button {
     color: white;
     background-color: #268f92;
     border: none;
-    /* position: relative; */
-    bottom: -10px;
+    cursor: pointer;
     text-transform: uppercase;
+    transition: 0.3s all;
 }
-
+button:hover {
+    box-shadow: 2px 2px 10px #181818eb;
+}
 #strength {
     font-weight: 100;
     margin-top: 2px;
